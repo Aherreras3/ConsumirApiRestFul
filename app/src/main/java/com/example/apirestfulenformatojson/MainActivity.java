@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity implements Asynchtask {
         JSONArray JSONLista=objectojson.getJSONArray("data");
         for(int i=0; i<JSONLista.length();i++){
             JSONObject mostrarlista=JSONLista.getJSONObject(i);
-            list=list +"user:"+mostrarlista.getString("name").toString()+
-                    " "+mostrarlista.getString("email").toString()+"\n";
+            list=list +"user: "+mostrarlista.getString("name").toString()+
+                    "\r\n\"email: "+mostrarlista.getString("email").toString()+"\r\n";
 
         }
         txtmuestralist.setText(list);
